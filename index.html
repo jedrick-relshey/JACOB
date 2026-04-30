@@ -3,24 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/mobile.css">
     <title>Portfolio</title>
 </head>
 <body>
     
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SERVICE</a></li>
-                <li><a href="">PORTFOLIO</a></li>
-                <li><a href="">RESUME</a></li>
-                <li><a href="">BLOG</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
+    <header class="navbar-header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <span class="logo-text">About</span><span class="logo-accent">Me.</span>
+                </div>
+
+                <div class="hamberger" id="hamberger">☰</div>
+
+                <ul class="nav-menu">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="">SERVICE</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">RESUME</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>            
         </nav>
     </header>
 
+    <section class="hero" id="home">
+        <div class="hero-container">  
+            <div class="hero-content">  
+                <p class="greating">Wellcome To My Portfolio</p>
+                <h1>I'm Jacob </h1>
+                <p class="presentation">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                <button class="btn btn-primary">Contact Us</button>
+            </div>
+            <div class="hero-image">
+                <img src="./IMAGE/profile-jacob.jpg" alt="Jacob profile">
+            </div>
+        </div>
+    </section> 
+
+    <!-- About Section Page -->
+    <section class="About" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="/IMAGE/jedjeds.jpg" alt="about-profile">
+            </div>
+            <div class="about-content">
+                <h2>About <span class="accent">Me!</span></h2>
+                <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <button class="btn btn-primary">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="/JAVASCRIPT/function.js"></script>
 </body>
 </html>

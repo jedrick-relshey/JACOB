@@ -1,0 +1,84 @@
+/* ============ RESPONSIVE DESIGN ============ */
+@media (max-width: 768px) {
+    .hero,
+    .about { 
+        min-height: 100vh;
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-container,
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero h1,
+    .about-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-image img,
+    .about-image img {
+        max-width: 300px;
+    }
+
+    .about-image::before {
+        width: 85%;
+        height: 85%;
+    }
+
+    .hamberger {
+        display: block;
+    }
+ 
+    .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #000;
+        text-align: center;
+        padding: 0;
+
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+
+    .nav-menu.active {
+        max-height: 500px; /* enough height for menu */
+        opacity: 1;
+        padding: 20px 0;
+    }
+
+    .nav-menu li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1,
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    .hero-greeting,
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+}

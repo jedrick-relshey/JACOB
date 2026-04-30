@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #000000;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    top: 0; 
+    z-index: 1000;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo-text {
+    color: #ffffff;
+}
+
+.logo-accent {
+    color: #EAB308;
+}
+
+.hamberger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-menu a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffd700;
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ffffff;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* =====    INTRODUCTION PAGE =====*/
+
+.hero { 
+    background-color: #1a1a2e;
+    padding: 80px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.greating {
+    color: #ffd700;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.presentation {
+    color: #b0b0b0;
+    font-size: 23px;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 20px;
+    background-color: #c0c0c0;
+    object-fit: cover;
+}
+
+/*===== About Section ======*/
+
+.About {
+    background-color: #0f1419;
+    padding: 80px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+}
+
+.about-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 20px;
+    background-color: #c0c0c0;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
+/*Border effect*/
+
+.about-image::before {
+    content: '';
+    position: absolute;
+    width: 98%;    
+    height: 95%;
+    border: 15px solid #ffd700;
+    border-radius: 20px;
+    bottom: -40px;
+    right: 5%;
+    z-index: 1;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-content h2 {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.about-content .accent {
+    color:  #ffd700;
+}
+
+.about-content p {
+    color: #b0b0b0;
+    font-size: 23px;
+    line-height: 1.6;
+}
+
+/*======== BUTTON ========*/
+
+.btn {
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all0.3s ease;
+    width: fit-content;
+    letter-spacing: 0.5ox;
+}
+
+.btn-primary {
+    background-color: #ffd700;
+    color: #000000;
+}
+
+.btn-primary:hover {
+    background-color: #ffedff;
+    transform: translate(-2px);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+}
