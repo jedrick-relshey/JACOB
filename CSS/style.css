@@ -299,7 +299,7 @@ body {
 }
 
 .digital-item {
-    background-color: #020617;
+    background-color: #1a1a2e;
     min-height: 310px;
     padding: 42px 34px 34px;
     border-radius: 8px;
@@ -334,3 +334,13 @@ body {
     line-height: 1.55;
     max-width: 255px;
 }
+
+.experiences {
+    background-color: #0f1419;
+    padding: 90px 40px 70px;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; 
+}
+
