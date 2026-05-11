@@ -344,3 +344,21 @@ body {
     justify-content: center; 
 }
 
+.experiences-container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.experiences-text {
+    color: #6B7280;
+    font-size: 17px;
+    line-height: 1.55;
+    max-width: 520px;
+    margin-bottom: 115px;
+}
+
+    .digital-item h5 {
+        color: #e4edfc;
+        font-size: 14px;
+        max-width: 255px;
+    }
