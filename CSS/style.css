@@ -10,6 +10,7 @@ html {
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #111827;
 }
 
 .navbar {
@@ -117,6 +118,7 @@ body {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
+    font-family: "Lexend Deca", Arial, sans-serif;
 }
 
 .hero h1 {
@@ -131,6 +133,7 @@ body {
     font-size: 23px;
     line-height: 1.6;
     max-width: 500px;
+    font-family: "Lexend Deca", Arial, sans-serif;
 }
 
 .hero-image {
@@ -243,4 +246,91 @@ body {
     background-color: #ffedff;
     transform: translate(-2px);
     box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+}
+
+.Service {
+    background-color: #111827;
+    padding: 90px 40px 70px;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; 
+}
+
+.service-container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0;
+}
+
+.h2-text {
+    color: #F3F4F6;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 80px;
+    font-family: "Lexend Deca", Arial, sans-serif;
+}
+
+.span-text {
+    color: #EAB308;
+}
+
+.service-text {
+    color: #6B7280;
+    font-size: 17px;
+    line-height: 1.55;
+    max-width: 520px;
+    margin-bottom: 115px;
+}
+
+.digital-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px;
+    margin-top: 0;
+    padding: 0;
+}
+
+.digital-item {
+    background-color: #020617;
+    min-height: 310px;
+    padding: 42px 34px 34px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s ease;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.digital-item .icon {
+    color: #EAB308;
+    font-size: 34px;
+    line-height: 1;
+    margin-bottom: 36px;
+}
+
+.digital-item h3 {
+    color: #F9FAFB;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.55;
+    margin-bottom: 18px;
+    max-width: 230px;
+}
+
+.digital-item p {
+    color: #9CA3AF;
+    font-size: 16px;
+    line-height: 1.55;
+    max-width: 255px;
 }

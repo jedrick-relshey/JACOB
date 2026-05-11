@@ -1,7 +1,8 @@
 /* ============ RESPONSIVE DESIGN ============ */
 @media (max-width: 768px) {
     .hero,
-    .about { 
+    .About,
+    .Service { 
         min-height: 100vh;
         height: auto;
         padding: 60px 20px;
@@ -63,6 +64,43 @@
         font-size: 28px;
         color: white;
         cursor: pointer;
+    }
+
+    .service-container {
+        max-width: 520px;
+    }
+
+    .h2-text {
+        font-size: 35px;
+        margin-bottom: 36px;
+    }
+
+    .service-text {
+        font-size: 14px;
+        margin-bottom: 44px;
+    }
+
+    .digital-content {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .digital-item {
+        min-height: auto;
+        padding: 28px 22px;
+    }
+
+    .digital-item .icon {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+
+    .digital-item h3 {
+        font-size: 20px;
+    }
+
+    .digital-item p {
+        font-size: 14px;
     }
 }
 
